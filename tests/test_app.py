@@ -16,4 +16,11 @@ def test_palindrome_false():
 def test_palindrome_invalid_input():
     with pytest.raises(TypeError):
         is_palindrome(12345)
+def add(a, b):
+    return a + b
 
+# قبل
+assert add(2, 3) == 5
+
+# التعديل لجعل الاختبار يفشل
+assert add(2, 3) == 6
