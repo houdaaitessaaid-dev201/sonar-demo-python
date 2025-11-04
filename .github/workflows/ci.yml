@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: [ "main" ]
   workflow_dispatch:
+  schedule:           # تشغيل تلقائي يومي
+    - cron: "0 0 * * *"  # كل ليلة على الساعة 00:00 UTC
 
 jobs:
   test:
