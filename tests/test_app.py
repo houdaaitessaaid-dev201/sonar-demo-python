@@ -19,6 +19,4 @@ def test_palindrome_invalid_input():
 def add(a, b):
     return a + b
 
-
-# التعديل لجعل الاختبار يفشل
-assert add(2, 3) == 6
+assert add(2, 3) == 5
