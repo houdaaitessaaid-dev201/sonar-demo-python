@@ -7,12 +7,11 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
   schedule:           # تشغيل تلقائي يومي
-    - cron: "0 0 * * *"  # كل ليلة على الساعة 00:00 UTC
+    - cron: "15 8 * * *"  # كل ليلة على الساعة 00:00 UTC
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v5
